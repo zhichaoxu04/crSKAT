@@ -31,7 +31,7 @@
 #' @export
 #' @examples
 #' n <- 30000
-#' q <- 50
+#' q <- 500
 #' alpha1 <- -0.1
 #' alpha2 <- -0.3
 #' beta1 <- 0.03
