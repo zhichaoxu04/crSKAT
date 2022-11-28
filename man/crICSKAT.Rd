@@ -53,7 +53,7 @@ Calculate the test statistic and p-value for interval-censored competing risks S
 }
 \examples{
 n <- 30000
-q <- 500
+q <- 50
 alpha1 <- -0.1
 alpha2 <- -0.3
 beta1 <- 0.03

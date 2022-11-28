@@ -3,6 +3,8 @@
 genDataraw <- function(seed=NULL, n, alpha1, alpha2, beta1, beta2) {
   if (!is.null(seed)) {
     set.seed(seed)
+  } else {
+    set.seed(sample(1:10000, 1))
   }
 
   # assume as in Hudgens et al. paper that \sum Fk(\infty) = 1, so one of events will always happen,
