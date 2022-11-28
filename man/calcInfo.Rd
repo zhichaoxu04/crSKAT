@@ -40,7 +40,7 @@ Calculate Fisher information matrix.
 }
 \examples{
 seed <- 2022
-n <- 1000
+n <- 3000
 q <- 20
 alpha1 <- -0.058
 alpha2 <- -0.035
