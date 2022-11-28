@@ -3,7 +3,7 @@
 genDataraw <- function(seed=NULL, n, alpha1, alpha2, beta1, beta2) {
   if (!is.null(seed)) {
     set.seed(seed)
-  } else {
+  }else {
     set.seed(sample(1:10000, 1))
   }
 
