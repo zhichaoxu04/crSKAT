@@ -1,0 +1,30 @@
+Package: crICSKAT
+Type: Package
+Title: Competing Risks Interval-Censored Sequence Kernel Association Test
+Version: 0.1.0
+Authors@R: c(
+	person("Zhichao", "Xu", email = "zxu7@mdanderson.org", role = c("aut", "cre")),
+	person("Ryan", "Sun", role="aut"))
+Description: Description: Implements the Interval-Censored Sequence Kernel Association test for testing the association between interval-censored time-to-event outcomes and groups of single nucleotide polymorphisms (SNPs) when considering competing risks. Interval-censored time-to-event data occur when the event time is not known exactly but can be deduced to fall within a given interval. This package also implements the competing risks interval-censored Burden test.
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    CompQuadForm,
+    tidyverse,
+    magrittr,
+    cmprsk,
+    Rcpp (>= 0.11.3),
+    rje,
+    survival,
+    tidyr,
+    nleqslv,
+    ICSKAT,
+    zoo,
+    bindata,
+    data.table,
+    purrr,
+    rlist
+Suggests: knitr,
+    rmarkdown
+RoxygenNote: 7.2.2
