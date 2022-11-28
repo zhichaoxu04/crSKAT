@@ -1,0 +1,12 @@
+---
+title: "crICSKAT Tutorial"
+author: "Zhichao Xu"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+    %\VignetteIndexEntry{crICSKAT Tutorial}
+    %\VignetteEngine{knitr::rmarkdown}
+    %\VignetteEncoding{UTF-8}
+---
+
+## Introduction 
