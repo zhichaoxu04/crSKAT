@@ -1,3 +1,6 @@
+crSKAT: Interval-censored Competing Risks Sequence Kernel Association
+Test
+================
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 

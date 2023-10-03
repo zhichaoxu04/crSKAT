@@ -1,4 +1,5 @@
 ---
+title: "crSKAT: Interval-censored Competing Risks Sequence Kernel Association Test"
 output: github_document
 ---
 
