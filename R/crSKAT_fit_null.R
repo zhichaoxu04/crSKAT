@@ -1,4 +1,4 @@
-#' crICSKAT_fit_null.R
+#' crSKAT_fit_null.R
 #'
 #' Fit the null model (cubic basis spline for baseline cumulative hazard and coefficients
 #' for non-genetic coefficiens) for interval-censored competing risks SKAT.

@@ -1,4 +1,4 @@
-#' crICSKAT.R
+#' crSKAT.R
 #'
 #' Calculate the test statistic and p-value for interval-censored competing risks SKAT.
 #'
