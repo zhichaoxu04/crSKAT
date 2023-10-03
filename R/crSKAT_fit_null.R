@@ -42,10 +42,10 @@
 #' rt <- outcomeDat$rightTimes
 #' obsInd <- outcomeDat$deltaVecSimple
 #' dmats <- makeICdmat(xMat = xMat, lt = lt, rt = rt, obsInd = obsInd, quant_r = NULL, nKnots = 1)
-#' crICSKAT_fit_null(init_beta=rep(0, 9), leftDmat=dmats$left_dmat, rightDmat=dmats$right_dmat,
+#' crSKAT_fit_null(init_beta=rep(0, 9), leftDmat=dmats$left_dmat, rightDmat=dmats$right_dmat,
 #' deltaVec=outcomeDat$deltaVec, leftTimes=outcomeDat$leftTimes, gSummed=gSummed, allowSingular=TRUE, method="Broyden")
 #'
-crICSKAT_fit_null <- function(init_beta, leftDmat, rightDmat, deltaVec, leftTimes, gSummed, allowSingular=TRUE, method = c("Broyden", "Newton")) {
+crSKAT_fit_null <- function(init_beta, leftDmat, rightDmat, deltaVec, leftTimes, gSummed, allowSingular=TRUE, method = c("Broyden", "Newton")) {
   if(!method %in% c("Broyden", "Newton")){
     return(list(beta_fit=NA, iter=NA, times=iter, Msg=NA,
                 termcd=NA, err=1, errMsg="Specify the method within the list"))

@@ -45,12 +45,12 @@
 #' rt <- outcomeDat$rightTimes
 #' obsInd <- outcomeDat$deltaVecSimple
 #' dmats <- makeICdmat(xMat = xMat, lt = lt, rt = rt, obsInd = obsInd, quant_r = NULL, nKnots = 1)
-#' nullFit <- crICSKAT_fit_null(init_beta=rep(0, 9), leftDmat=dmats$left_dmat, rightDmat=dmats$right_dmat,
+#' nullFit <- crSKAT_fit_null(init_beta=rep(0, 9), leftDmat=dmats$left_dmat, rightDmat=dmats$right_dmat,
 #' deltaVec=outcomeDat$deltaVec, leftTimes=outcomeDat$leftTimes, gSummed=gSummed, allowSingular=FALSE, method="Broyden")
-#' out <- crICSKAT(leftDmat=dmats$left_dmat, rightDmat=dmats$right_dmat, leftTimes=outcomeDat$leftTimes,
+#' out <- crSKAT(leftDmat=dmats$left_dmat, rightDmat=dmats$right_dmat, leftTimes=outcomeDat$leftTimes,
 #' deltaVec=outcomeDat$deltaVec, gMat=gMat, gSummed=gSummed, null_beta=nullFit$beta_fit, pvalue=TRUE)
 #'
-crICSKAT <- function(leftDmat, rightDmat, leftTimes, deltaVec, gMat, gSummed, null_beta, pvalue=TRUE) {
+crSKAT <- function(leftDmat, rightDmat, leftTimes, deltaVec, gMat, gSummed, null_beta, pvalue=TRUE) {
   q <- ncol(gMat)
   numCov <- ncol(leftDmat)
 
