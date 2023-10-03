@@ -13,7 +13,7 @@ for competing risks. This package is particularly useful for making
 inferences on sets of features in genetic association studies, such as
 all SNPs in a gene or pathway.
 
-# Introduction
+# Getting Started
 
     git clone https:
 

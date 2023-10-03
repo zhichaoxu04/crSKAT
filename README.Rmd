@@ -22,7 +22,7 @@ library(knitr)
 The crICSKAT package is designed to implement the crICSKAT (Interval-Censored Sequence Kernel Association Test accounting for competing risks) and the interval-censored Burden test while accounting for competing risks. This package is particularly useful for making inferences on sets of features in genetic association studies, such as all SNPs in a gene or pathway.
 
 
-# Introduction
+# Getting Started
 ```
 git clone https:
 ```
