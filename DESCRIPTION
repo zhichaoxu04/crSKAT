@@ -1,7 +1,7 @@
 Package: crSKAT
 Type: Package
 Title: Competing Risks Interval-Censored Sequence Kernel Association Test
-Version: 0.1.0
+Version: 0.2.0
 Authors@R: c(
 	person("Zhichao", "Xu", email = "zxu7@mdanderson.org", role = c("aut", "cre")),
 	person("Ryan", "Sun", role="aut"))
