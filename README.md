@@ -3,9 +3,6 @@ Test
 ================
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-
-# Introduction
-
 <!-- badges: start -->
 <!-- badges: end -->
 
@@ -15,6 +12,10 @@ competing risks) and the interval-censored Burden test while accounting
 for competing risks. This package is particularly useful for making
 inferences on sets of features in genetic association studies, such as
 all SNPs in a gene or pathway.
+
+# Introduction
+
+    git clone https:
 
 Interval-censored data is a category of failure time data, also known as
 time-to-event data, that is frequently encountered in contemporary
