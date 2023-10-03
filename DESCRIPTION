@@ -1,4 +1,4 @@
-Package: crICSKAT
+Package: crSKAT
 Type: Package
 Title: Competing Risks Interval-Censored Sequence Kernel Association Test
 Version: 0.1.0
