@@ -7,12 +7,12 @@
 \format{
 A list of 2 with 1000 observations
 \describe{
-  \item{tempTime}{The time-to-event observed time}
-  \item{tempType}{The type of causes to the outcome: primary outcome or competing event}
+\item{tempTime}{The time-to-event observed time}
+\item{tempType}{The type of causes to the outcome: primary outcome or competing event}
 }
 }
 \source{
-<https://onlinelibrary.wiley.com/doi/10.1111/biom.12109>
+\url{https://onlinelibrary.wiley.com/doi/10.1111/biom.12109}
 }
 \usage{
 exampleData
