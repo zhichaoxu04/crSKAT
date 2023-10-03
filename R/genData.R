@@ -5,17 +5,17 @@
 #'
 #' @param seed Random seed.
 #' @param n The number of observations to generate (sample size).
-#' @param alpha1 First parameter for Gompertz model.
-#' @param alpha2 Second parameter for Gompertz model.
-#' @param beta1 Third parameter for Gompertz model.
-#' @param beta2 Fourth parameter for Gompertz model.
+#' @param alpha1 1st parameter for Gompertz model.
+#' @param alpha2 2nd parameter for Gompertz model.
+#' @param beta1 3rd parameter for Gompertz model.
+#' @param beta2 4th parameter for Gompertz model.
 #' @param obsTimes Vector of the intended observation times.
 #' @param probMiss The probability of missing any given visit (default is 0.1).
 #' @param windowHalf The amount of time before or after the intended obsTimes that a visit might take place (default is 1).
 #'
 #' @return A list with the elements:
 #' \item{tempTime}{n*1 vector of exact event times.}
-#' \item{tempType}{n*1 vector of exact event types}
+#' \item{tempType}{n*1 vector of exact event types.}
 #' \item{deltaVecSimple}{n*1 vector of whether the event was observed after follow-up started (t>0).}
 #' \item{deltaVec}{n*1 vector of the event cause (cause 1 or 2; or right-censored 0).}
 #' \item{leftTimes}{n*1 vector of left side of interval times.}

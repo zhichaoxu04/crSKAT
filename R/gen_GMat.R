@@ -3,11 +3,10 @@
 #' Generate the multivariate binary random genotype matrix for simulation studies.
 #'
 #' @param n the number of observations to generate (sample size).
-#' @param q the number of SNPs
-#' @param rho the correlation for the binary correlation matrix
+#' @param q the number of SNPs.
+#' @param rho the correlation for the binary correlation matrix.
 #'
-#' @return A list with the elements:
-#' \item{x}{n*(q) correlated matrix for simulated SNPs.}
+#' @return A n*q correlated matrix for simulated SNPs.
 #'
 #' @importFrom stats toeplitz
 #' @importFrom bindata rmvbin

@@ -25,5 +25,4 @@ beta1 <- 0.03
 beta2 <- log(1 - exp(beta1 / alpha1)) * alpha2
 
 exampleData <- genDataraw(seed=NULL, n=1000, alpha1, alpha2, beta1, beta2)
-
 usethis::use_data(exampleData, overwrite = TRUE)

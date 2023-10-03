@@ -9,13 +9,12 @@ gen_GMat(n, q, rho)
 \arguments{
 \item{n}{the number of observations to generate (sample size).}
 
-\item{q}{the number of SNPs}
+\item{q}{the number of SNPs.}
 
-\item{rho}{the correlation for the binary correlation matrix}
+\item{rho}{the correlation for the binary correlation matrix.}
 }
 \value{
-A list with the elements:
-\item{x}{n*(q) correlated matrix for simulated SNPs.}
+A n*q correlated matrix for simulated SNPs.
 }
 \description{
 Generate the multivariate binary random genotype matrix for simulation studies.
