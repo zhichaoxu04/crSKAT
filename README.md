@@ -50,16 +50,6 @@ Download and install following required R packages:
     Compute the distribution function of quadratic forms in normal
     variables using Imhof’s method, Davies’s algorithm, Farebrother’s
     algorithm or Liu et al.’s algorithm.
-  - [tidyverse](https://www.tidyverse.org): The tidyverse is an
-    opinionated collection of R packages designed for data science. All
-    packages share an underlying design philosophy, grammar, and data
-    structures.
-  - [cmprsk](https://cran.r-project.org/web/packages/cmprsk/index.html):
-    Estimation, testing and regression modeling of subdistribution
-    functions in competing risks.
-  - [Rcpp](https://cran.r-project.org/web/packages/Rcpp/index.html) (\>=
-    0.11.3): Provides R functions as well as C++ classes which offer a
-    seamless integration of R and C++.
   - [nleqslv](https://cran.r-project.org/web/packages/nleqslv/index.html):
     Solves a system of nonlinear equations using a Broyden or a Newton
     method with a choice of global strategies such as line search and
@@ -69,6 +59,8 @@ Download and install following required R packages:
     (ICSKAT) test for testing the association between interval-censored
     time-to-event outcomes and groups of single nucleotide polymorphisms
     (SNPs).
+  - [bindata](https://cran.r-project.org/web/packages/bindata/index.html):
+    Generates correlated artificial binary data.
 
 ## Toy Example
 
