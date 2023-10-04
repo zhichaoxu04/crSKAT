@@ -45,7 +45,7 @@
 #' dmats <- makeICdmat(xMat = xMat, lt = lt, rt = rt, obsInd = obsInd, quant_r = NULL, nKnots = 1)
 #' rightDmat <- dmats$right_dmat
 #' crSKAT_fit_null(init_beta=rep(0, 9), leftDmat=dmats$left_dmat, rightDmat=rightDmat,
-#' deltaVec=deltaVec, leftTimes=outcomeDat$leftTimes, gSummed=gSummed, method="Broyden")
+#' deltaVec=deltaVec, leftTimes=lt, gSummed=gSummed, method="Broyden")
 #'
 crSKAT_fit_null <- function(init_beta, leftDmat, rightDmat, deltaVec, leftTimes, gSummed, allowSingular=TRUE, method = c("Broyden", "Newton")) {
   if(!method %in% c("Broyden", "Newton")){
