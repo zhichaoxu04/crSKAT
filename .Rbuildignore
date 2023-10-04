@@ -3,3 +3,4 @@
 ^data-raw$
 ^vignettes/articles$
 ^README\.Rmd$
+^docs$
