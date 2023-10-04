@@ -34,6 +34,7 @@
 #' beta1 <- 0.03
 #' beta2 <- log(1 - exp(beta1 / alpha1)) * alpha2
 #' outcomeDat <- genData(seed=seed, n=n, alpha1=alpha1, alpha2=alpha2, beta1=beta1, beta2=beta2)
+#' deltaVec <- outcomeDat$deltaVec
 #' xMat <- matrix(data=rnorm(n), nrow=n)
 #' gMat <- matrix(data=rbinom(n=n*q, size=2, prob=0.3), ncol=q)
 #' gSummed <- matrix(data=apply(gMat, 1, sum), ncol=1)
@@ -42,8 +43,9 @@
 #' rt <- outcomeDat$rightTimes
 #' obsInd <- outcomeDat$deltaVecSimple
 #' dmats <- makeICdmat(xMat = xMat, lt = lt, rt = rt, obsInd = obsInd, quant_r = NULL, nKnots = 1)
-#' crSKAT_fit_null(init_beta=rep(0, 9), leftDmat=dmats$left_dmat, rightDmat=dmats$right_dmat,
-#' deltaVec=outcomeDat$deltaVec, leftTimes=outcomeDat$leftTimes, gSummed=gSummed, allowSingular=TRUE, method="Broyden")
+#' rightDmat <- dmats$right_dmat
+#' crSKAT_fit_null(init_beta=rep(0, 9), leftDmat=dmats$left_dmat, rightDmat=rightDmat,
+#' deltaVec=deltaVec, leftTimes=outcomeDat$leftTimes, gSummed=gSummed, method="Broyden")
 #'
 crSKAT_fit_null <- function(init_beta, leftDmat, rightDmat, deltaVec, leftTimes, gSummed, allowSingular=TRUE, method = c("Broyden", "Newton")) {
   if(!method %in% c("Broyden", "Newton")){
