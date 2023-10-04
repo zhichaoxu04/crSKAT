@@ -70,7 +70,7 @@ alpha2 <- -0.035
 beta1 <- 0.03
 beta2 <- log(1 - exp(beta1 / alpha1)) * alpha2
 # generate data
-outcomeDat <- crICSKAT::genData(seed=2023, n=n, 
+outcomeDat <- crSKAT::genData(seed=2023, n=n, 
                                 alpha1=alpha1, alpha2=alpha2, beta1=beta1, beta2=beta2,
                                 obsTimes=obsTimes, probMiss=0.1, windowHalf=.25)
 lt <- outcomeDat$leftTimes
@@ -81,15 +81,15 @@ obsInd <- outcomeDat$deltaVecSimple
 deltaVec <- outcomeDat$deltaVec
 
 # make design matrix with cubic spline terms using 1 knot
-dmats <- crICSKAT::makeICdmat(xMat=xMat, lt=lt, rt=rt, obsInd=obsInd, quant_r=NULL, nKnots=1)
+dmats <- crSKAT::makeICdmat(xMat=xMat, lt=lt, rt=rt, obsInd=obsInd, quant_r=NULL, nKnots=1)
 # fit null model - only need to do this once for each genetic set 
 # (note there is only gSummed information on the SNPs used here, which will be constant)
-nullFit <- crICSKAT::crICSKAT_fit_null(init_beta=c(rep(0,10),.001), 
+nullFit <- crSKAT::crSKAT_fit_null(init_beta=c(rep(0,10),.001), 
                                        leftDmat=dmats$left_dmat, rightDmat=dmats$right_dmat,
                                        deltaVec=deltaVec, leftTimes=lt, gSummed=gSummed, 
                                        allowSingular=TRUE, method="Broyden")
 # perform the ICSKAT and Burden tests
-crICSKATOut <- crICSKAT::crICSKAT(leftDmat=dmats$left_dmat, rightDmat=dmats$right_dmat, 
+crICSKATOut <- crSKAT::crSKAT(leftDmat=dmats$left_dmat, rightDmat=dmats$right_dmat, 
                                   leftTimes=lt,deltaVec=deltaVec, gMat=gMat, 
                                   gSummed=gSummed, null_beta=nullFit$beta_fit, pvalue=TRUE)
 crICSKATOut$p_SKAT
