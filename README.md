@@ -216,6 +216,8 @@ steps:
 The crSKAT package is built upon the foundations of the [nleqslv R
 package](https://cran.r-project.org/web/packages/nleqslv/index.html),
 [ICSKAT R
-package](https://cran.r-project.org/web/packages/ICSKAT/index.html). We
-extend our heartfelt gratitude to the authors of these packages for
+package](https://cran.r-project.org/web/packages/ICSKAT/index.html),
+[CompQuadForm R
+package](https://cran.r-project.org/web/packages/CompQuadForm/index.html).
+We extend our heartfelt gratitude to the authors of these packages for
 their invaluable contributions.

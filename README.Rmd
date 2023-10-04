@@ -151,7 +151,7 @@ To perform the crSKAT/crBurden test using [crSKAT](https://github.com/zhichaoxu0
 3. Once the null model is fitted, the concluding step involves testing each SNP set with the `crSKAT::crSKAT()` function. The `gMat` parameter should represent a genotype matrix. Additionally, you'll require `leftDmat`, `rightDmat`, `leftTimes`, `gSummed`, and `deltaVec`, all of which were previously discussed. Lastly, you'll need `null_beta`, which is directly sourced from `crSKAT::crSKAT_fit_null()`. 
 
 ## Notes:
-The crSKAT package is built upon the foundations of the [nleqslv R package](https://cran.r-project.org/web/packages/nleqslv/index.html), [ICSKAT R package](https://cran.r-project.org/web/packages/ICSKAT/index.html). We extend our heartfelt gratitude to the authors of these packages for their invaluable contributions.
+The crSKAT package is built upon the foundations of the [nleqslv R package](https://cran.r-project.org/web/packages/nleqslv/index.html), [ICSKAT R package](https://cran.r-project.org/web/packages/ICSKAT/index.html), [CompQuadForm R package](https://cran.r-project.org/web/packages/CompQuadForm/index.html). We extend our heartfelt gratitude to the authors of these packages for their invaluable contributions.
 
 
 
