@@ -24,7 +24,7 @@ The crICSKAT package is designed to implement the crICSKAT (Interval-Censored Se
 
 # Getting Started
 ```
-git clone https:
+git clone https://github.com/zhichaoxu04/crSKAT.git
 ```
 
 Interval-censored data is a category of failure time data, also known as time-to-event data, that is frequently encountered in contemporary genetic datasets such as the UK Biobank (UKB) and St. Jude Lifetime Cohort Study (SJLIFE). While many individuals are familiar with right-censored data, which is a type of interval-censored data, interval-censored data is not precisely known but is only known to fall within a specific range or interval (such as between 0 and 10, between 15 and 18, or between 30 and infinity).

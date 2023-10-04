@@ -15,7 +15,7 @@ all SNPs in a gene or pathway.
 
 # Getting Started
 
-    git clone https:
+    git clone https://github.com/zhichaoxu04/crSKAT.git
 
 Interval-censored data is a category of failure time data, also known as
 time-to-event data, that is frequently encountered in contemporary
