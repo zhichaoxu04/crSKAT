@@ -9,6 +9,7 @@
 #' @param beta2 4th parameter for Gompertz model.
 #' @param gMatCausal the genotype matrix of causal SNPs.
 #' @param effectSizes the effect size of each causal SNP.
+#' @param seed random seed.
 #'
 #' @return A list with the elements:
 #' \item{tempTime}{n*1 vector of exact event times.}
