@@ -4,13 +4,12 @@
 #'
 #' @param leftDmat n*(p+nknots+2) design matrix for left end of interval.
 #' @param rightDmat n*(p+nknots+2) design matrix for right end of interval.
-#' @param lt n*1 vector of left side of interval times.
-#' @param rt n*1 vector of right side of interval times.
+#' @param leftTimes n*1 vector of left side of interval times.
 #' @param deltaVec n*1 vector of the event cause (cause 1 or 2; or right-censored 0).
 #' @param gMat n*q genotype matrix.
+#' @param gSummed n*1 vector of summed genotype matrix.
 #' @param null_beta (p+nknots+2)*1 vector of coefficients for null model.
-#' @param Itt (p+nknots+2)*(p+nknots+2) Fisher information matrix for null model coefficients.
-#' @param pvalue Boolean, if TRUE then find the p-value (maybe don't need it if bootstrapping, saves eigendecomposition)
+#' @param pvalue If TRUE, then find the p-value
 #'
 #' @return A list with the elements:
 #' \item{p_SKAT}{ICSKAT p-value}
