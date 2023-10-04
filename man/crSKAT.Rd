@@ -66,10 +66,13 @@ obsTimes <- 3:7
 lt <- outcomeDat$leftTimes
 rt <- outcomeDat$rightTimes
 obsInd <- outcomeDat$deltaVecSimple
+deltaVec <- outcomeDat$deltaVec
 dmats <- makeICdmat(xMat = xMat, lt = lt, rt = rt, obsInd = obsInd, quant_r = NULL, nKnots = 1)
-nullFit <- crSKAT_fit_null(init_beta=rep(0, 9), leftDmat=dmats$left_dmat, rightDmat=dmats$right_dmat,
-deltaVec=outcomeDat$deltaVec, leftTimes=outcomeDat$leftTimes, gSummed=gSummed, allowSingular=FALSE, method="Broyden")
-out <- crSKAT(leftDmat=dmats$left_dmat, rightDmat=dmats$right_dmat, leftTimes=outcomeDat$leftTimes,
-deltaVec=outcomeDat$deltaVec, gMat=gMat, gSummed=gSummed, null_beta=nullFit$beta_fit, pvalue=TRUE)
+leftDmat <- dmats$left_dmat
+rightDmat <- dmats$right_dmat
+nullFit <- crSKAT_fit_null(init_beta=rep(0, 9), leftDmat=leftDmat, rightDmat=rightDmat,
+deltaVec=deltaVec, leftTimes=lt, gSummed=gSummed, method="Broyden")
+out <- crSKAT(leftDmat=dmats$left_dmat, rightDmat=rightDmat, leftTimes=lt,
+deltaVec=deltaVec, gMat=gMat, gSummed=gSummed, null_beta=nullFit$beta_fit, pvalue=TRUE)
 
 }
