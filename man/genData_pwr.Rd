@@ -29,6 +29,8 @@ genData_pwr(
 \item{gMatCausal}{the genotype matrix of causal SNPs.}
 
 \item{effectSizes}{the effect size of each causal SNP.}
+
+\item{seed}{random seed.}
 }
 \value{
 A list with the elements:

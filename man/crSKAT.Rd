@@ -20,19 +20,17 @@ crSKAT(
 
 \item{rightDmat}{n*(p+nknots+2) design matrix for right end of interval.}
 
+\item{leftTimes}{n*1 vector of left side of interval times.}
+
 \item{deltaVec}{n*1 vector of the event cause (cause 1 or 2; or right-censored 0).}
 
 \item{gMat}{n*q genotype matrix.}
 
+\item{gSummed}{n*1 vector of summed genotype matrix.}
+
 \item{null_beta}{(p+nknots+2)*1 vector of coefficients for null model.}
 
-\item{pvalue}{Boolean, if TRUE then find the p-value (maybe don't need it if bootstrapping, saves eigendecomposition)}
-
-\item{lt}{n*1 vector of left side of interval times.}
-
-\item{rt}{n*1 vector of right side of interval times.}
-
-\item{Itt}{(p+nknots+2)*(p+nknots+2) Fisher information matrix for null model coefficients.}
+\item{pvalue}{If TRUE, then find the p-value}
 }
 \value{
 A list with the elements:
