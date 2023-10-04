@@ -6,16 +6,38 @@ Test
 <!-- badges: start -->
 <!-- badges: end -->
 
-The crICSKAT package is designed to implement the crICSKAT
-(Interval-Censored Sequence Kernel Association Test accounting for
-competing risks) and the interval-censored Burden test while accounting
-for competing risks. This package is particularly useful for making
-inferences on sets of features in genetic association studies, such as
-all SNPs in a gene or pathway.
+The [crSKAT](https://github.com/zhichaoxu04/crSKAT) `R` package
+facilitates the execution of the crSKAT method, which stands for
+Interval-Censored Sequence Kernel Association Test with competing risks
+outcomes. Additionally, it handles the interval-censored Burden test
+considering competing risks. This tool is especially valuable for
+conducting analyses on feature sets in genetic association research,
+like evaluating all SNPs within a specific gene or pathway.
 
 # Getting Started
 
+Download and install following required R packages:
+
+- Download [crSKAT](https://github.com/zhichaoxu04/crSKAT) package from
+  Github using:
+
+<!-- -->
+
     git clone https://github.com/zhichaoxu04/crSKAT.git
+
+- Install [crSKAT](https://github.com/zhichaoxu04/crSKAT) in R
+
+  - First, install [devtools](https://devtools.r-lib.org) in R from CRAN
+
+``` r
+install.packages("devtools")
+```
+
+- Then, install [crSKAT](https://github.com/zhichaoxu04/crSKAT)
+
+``` r
+devtools::install_github("zhichaoxu04/crSKAT")
+```
 
 Interval-censored data is a category of failure time data, also known as
 time-to-event data, that is frequently encountered in contemporary
