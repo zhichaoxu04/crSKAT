@@ -40,7 +40,7 @@ A list with the elements:
 \item{tempTime}{n\emph{1 vector of exact event times.}
 \item{tempType}{n}1 vector of exact event types.}
 \item{deltaVecSimple}{n\emph{1 vector of whether the event was observed after follow-up started (t>0).}
-\item{deltaVec}{n}1 vector of the event cause (cause 1 or 2; or right-censored 0).}
+\item{deltaVec}{n}1 vector of the event cause (cause 1, cause 2, or right-censored 0).}
 \item{leftTimes}{n\emph{1 vector of left side of interval times.}
 \item{rightTimes}{n}1 vector of right side of interval times.}
 }
