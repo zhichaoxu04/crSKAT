@@ -66,7 +66,7 @@ crSKAT_fit_null <- function(init_beta, leftDmat, rightDmat, deltaVec, leftTimes,
 
     # Add some variation to initial value
     set.seed(iter)
-    init_beta <- init_beta + rnorm(length(init_beta), 0, 0.01)
+    init_beta <- init_beta + stats::rnorm(length(init_beta), 0, 0.01)
   }
 
   if(is.na(solPartial)[1]){
