@@ -34,8 +34,8 @@ genData_pwr(
 }
 \value{
 A list with the elements:
-\item{tempTime}{n\emph{1 vector of exact event times.}
-\item{tempType}{n}1 vector of exact event types.}
+\item{tempTime}{A vector of exact event times.}
+\item{tempType}{A vector of exact event types.}
 }
 \description{
 Generate the data for power simulation studies.

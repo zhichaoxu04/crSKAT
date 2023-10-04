@@ -12,8 +12,8 @@
 #' @param seed random seed.
 #'
 #' @return A list with the elements:
-#' \item{tempTime}{n*1 vector of exact event times.}
-#' \item{tempType}{n*1 vector of exact event types.}
+#' \item{tempTime}{A vector of exact event times.}
+#' \item{tempType}{A vector of exact event types.}
 #'
 #' @importFrom stats rbinom
 #' @importFrom stats runif
