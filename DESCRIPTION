@@ -5,8 +5,8 @@ Version: 0.2.0
 Authors@R: c(
 	person("Zhichao", "Xu", email = "zxu7@mdanderson.org", role = c("aut", "cre")),
 	person("Ryan", "Sun", role="aut"))
-Description: Description: Implements the Interval-Censored Sequence Kernel Association test for testing the association between interval-censored time-to-event outcomes and groups of single nucleotide polymorphisms (SNPs) when considering competing risks. Interval-censored time-to-event data occur when the event time is not known exactly but can be deduced to fall within a given interval. This package also implements the competing risks interval-censored Burden test.
-License: What license is it under?
+Description: Implements the crSKAT method, which stands for Interval-Censored Sequence Kernel Association Test with competing risks outcomes. Additionally, it handles the interval-censored Burden test considering competing risks. Interval-censored time-to-event data is characterized by events whose exact timings are ambiguous but are constrained within a known interval. Competing risks arise in survival analysis when an individual is at risk of more than one mutually exclusive event, and the occurrence of one event hinders the observation of the other. For a detailed quickstart guide, please refer to the crSKAT GitHub repository.
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
 Imports: 
