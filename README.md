@@ -126,10 +126,28 @@ crICSKATOut <- crSKAT::crSKAT(leftDmat=dmats$left_dmat, rightDmat=dmats$right_dm
                               leftTimes=lt,deltaVec=deltaVec, gMat=gMat, 
                               gSummed=gSummed, null_beta=nullFit$beta_fit, 
                               pvalue=TRUE)
+# p-value of crSKAT
 crICSKATOut$p_SKAT
 #> [1] 0.6765122
+# p-value of crBurden test
 crICSKATOut$p_burden
 #> [1] 0.5926542
+
+# --- Test another genotype matrix, we DO NOT need to fit the null model again
+# Generate another set of SNPs
+gMat <- matrix(data=rbinom(n=n*q, size=2, prob=0.1), nrow=n)
+gSummed <- matrix(data=apply(gMat, 1, sum), ncol=1)
+# Perform the crSKAT and crBurden test again
+crICSKATOut <- crSKAT::crSKAT(leftDmat=dmats$left_dmat, rightDmat=dmats$right_dmat, 
+                              leftTimes=lt,deltaVec=deltaVec, gMat=gMat, 
+                              gSummed=gSummed, null_beta=nullFit$beta_fit, 
+                              pvalue=TRUE)
+# p-value of crSKAT
+crICSKATOut$p_SKAT
+#> [1] 0.9850078
+# p-value of crBurden test
+crICSKATOut$p_burden
+#> [1] 0.277369
 ```
 
 ## Notes:
