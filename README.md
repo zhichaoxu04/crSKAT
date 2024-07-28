@@ -7,7 +7,9 @@ Test
 <!-- badges: end -->
 
 > [!IMPORTANT]  
-> The crSKAT [paper](https://doi.org/10.1007/s12561-024-09448-3) has been published.
+> Cite this article:
+> 
+> Xu, Z., Choi, J. & Sun, R. [Set-Based Tests for Genetic Association Studies with Interval-Censored Competing Risks Outcomes.](https://doi.org/10.1007/s12561-024-09448-3) Stat Biosci (2024). [[Download citation]](https://citation-needed.springer.com/v2/references/10.1007/s12561-024-09448-3?format=refman&flavour=citation)
 
 The [crSKAT](https://github.com/zhichaoxu04/crSKAT) `R` package
 facilitates the execution of the crSKAT method, which stands for
