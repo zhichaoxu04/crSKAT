@@ -6,6 +6,9 @@ Test
 <!-- badges: start -->
 <!-- badges: end -->
 
+> [!IMPORTANT]  
+> The crSKAT [paper](https://doi.org/10.1007/s12561-024-09448-3) has been published.
+
 The [crSKAT](https://github.com/zhichaoxu04/crSKAT) `R` package
 facilitates the execution of the crSKAT method, which stands for
 Interval-Censored Sequence Kernel Association Test with competing risks
